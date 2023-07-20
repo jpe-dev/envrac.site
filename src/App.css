@@ -1,0 +1,160 @@
+html {
+  font-family: "Helvetica Neue", sans-serif !important;
+}
+html, nav, footer {
+  background-color: #F6F2F7;
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+}
+
+nav {
+  opacity: 100%;
+  height: auto;
+  border-bottom: 1px solid #AEADAE;
+}
+
+.subnav {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 6.5rem;
+  margin-left: 1rem;
+  font-size: 14pt;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .3s linear, opacity .3s linear;
+}
+
+.subnav a {
+  text-align: left;
+  display: block !important;
+}
+
+.menu {
+  height: 7rem;
+  display: flex;
+  padding: 0;
+  justify-content:space-between;
+  transition: height 1s;
+}
+
+.menu:hover {
+  height: 11rem;
+}
+
+.menu:hover .subnav {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu:hover li:first-child img {
+  margin-top: 12.5%;
+}
+
+.menu li {
+  display: inline;
+  text-align: left;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  font-size: 22.5pt;
+  font-weight: 500;
+}
+
+
+.menu li:first-child {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.menu li:first-child img {
+  height: 7rem;
+  margin-top: 0;
+  transition: margin-top 1s;
+}
+
+.menu li:last-child {
+  margin-right: 5.125rem;
+}
+
+.menu img {
+
+}
+
+nav, .menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+footer, nav {
+  text-align: center;
+}
+
+footer {
+  border-top: 1px solid #AEADAE;
+  height: 60px;
+}
+
+footer * {
+  display: inline-block;
+} 
+
+footer p a {
+  margin: 0 0.20em;
+}
+
+footer p {
+  color: #AEADAE;
+}
+
+footer p {
+  margin-top: 2rem;
+  margin-bottom: 0.25em;
+}
+
+footer p:first-child {
+  float:left;
+  margin-left: 0.25em;
+}  
+
+footer p:last-child {
+  float: right;
+  margin-right: 0.25em;
+}
+
+footer p:nth-child(2) {
+  margin-inline: 0% 5%;
+}
+footer p, footer:not(:nth-child(3)) {
+  font-size: 13.5pt;
+}
+
+footer p:nth-child(3) {
+  font-size: 16pt;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #A984B5;
+}
+
+li:hover a, p:hover a {
+  color: #A984B5;
+}
+
+li a:not(:hover), p a:not(:hover) {
+  color: #c0a4c8;
+}
+
