@@ -81,10 +81,6 @@ nav {
   margin-right: 5.125rem;
 }
 
-.menu img {
-
-}
-
 nav, .menu {
   width: 100%;
   margin: 0;
@@ -158,3 +154,64 @@ li a:not(:hover), p a:not(:hover) {
   color: #c0a4c8;
 }
 
+/* -- SCROLL TEXT -- */
+.ad-block {
+  background-color: #fff;
+  color: #5a5a5a;
+  font-weight: bold;
+  overflow: hidden;
+  height: 2rem;
+  font-size: 15pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .ad-text {
+  white-space: nowrap;
+  transform: translate(-100%, -100%);
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: my-animation 20s linear infinite;
+  -webkit-animation: my-animation 20s linear infinite;
+  animation: my-animation 20s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.w-25 {
+  width: 25% !important;
+}
+.w-50 {
+  width: 50% !important;
+}
+.w-75 {
+  width: 75% !important;
+}
+.w-100 {
+  width: 100% !important;
+}

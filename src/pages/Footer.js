@@ -6,6 +6,7 @@ const Footer = () => {
     return (
         <View>
             {/* TODO Barre d'annonce tournante */}
+            <div className='ad-block'><div className='ad-text'>Ea commodo cillum quis dolore. Ea commodo cillum quis dolore. Ea commodo cillum quis dolore. Ea commodo cillum quis dolore. Ea commodo cillum quis dolore.</div></div>
             <footer>
                 <p>EnVRAC Copyright 2023</p>
                 <p><a href='/cookiepolicy'>Cookie Policy</a>-<a href='/legalterms'>Legal Terms</a>-<a href='/privacypolicy'>Privacy Policy</a></p>

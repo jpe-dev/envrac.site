@@ -26,6 +26,8 @@ const Services = () => {
                     Elit nostrud enim quis dolore exercitation dolor irure laborum nisi eu aliquip est excepteur. Nostrud irure ex laborum cupidatat minim in sit Lorem deserunt deserunt est tempor. Exercitation laboris id elit quis cillum pariatur cillum. Qui reprehenderit incididunt sit qui.
 
                     Aliquip elit incididunt culpa aliqua proident. Aliqua non sit aute esse nulla eiusmod sunt. Sunt et ea aliqua do commodo proident non. Anim nisi sit aliquip anim culpa commodo fugiat sunt adipisicing.</p>
+                <div className='ad-block'><div className='ad-text'>Ea commodo cillum quis dolore. Ea commodo cillum quis dolore. Ea commodo cillum quis dolore. Ea commodo cillum quis dolore. Ea commodo cillum quis dolore.</div></div>
+
                 <p>Sit Lorem officia ad mollit sit nostrud voluptate aute aliqua amet. Ipsum velit adipisicing amet nulla adipisicing do cillum. Aute deserunt reprehenderit magna mollit laborum pariatur aliquip id non. Consectetur exercitation commodo eiusmod duis Lorem occaecat voluptate velit amet adipisicing. Ipsum ullamco labore nostrud duis.
 
                     Ea qui ad esse amet sunt eiusmod exercitation non. Cillum adipisicing nisi amet dolore ea laborum id aliquip. Sunt veniam cupidatat magna excepteur ipsum. Eu sint qui commodo sint consectetur excepteur sit esse proident aliquip magna.
