@@ -162,12 +162,13 @@ li a:not(:hover), p a:not(:hover) {
   overflow: hidden;
   height: 2rem;
   font-size: 15pt;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   }
 
   .ad-text {
+  display: block !important;
   white-space: nowrap;
   transform: translate(-100%, -100%);
   -moz-transform: translateX(100%);
