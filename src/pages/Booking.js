@@ -12,7 +12,7 @@ const Booking = () => {
         <>
             <Menu />
             <div className='koalendar'>
-                <iframe title="koalendar iframe" src="https://koalendar.com/e/advanced-session?embed=true " width="100%" height="660px" frameborder="0"></iframe>
+                <iframe title="koalendar iframe" src="https://koalendar.com/e/advanced-session?embed=true " width="100%" height="660px" frameborder="0" id='koalendar'></iframe>
             </div>
             <Footer />
         </>

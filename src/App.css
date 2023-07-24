@@ -2,9 +2,15 @@ html {
   font-family: "Helvetica Neue", sans-serif !important;
   scroll-behavior: smooth;
   scroll-padding-top: 20rem;
+  height: 100vh !important;
 }
 html, nav, footer {
   background-color: #F6F2F7;
+}
+
+body {
+  min-height: 100vh !important;
+  position: relative;
 }
 
 .background::before {
@@ -44,7 +50,6 @@ section {
   font-size: 22.5pt;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  /* white-space: pre; */
 }
 
 .content p:last-child {
@@ -146,10 +151,23 @@ footer, nav {
   text-align: center;
 }
 
-footer {
-  border-top: 1px solid #AEADAE;
-  height: 60px;
+#footer-wrap {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 92px;
 }
+
+#root {
+  padding-bottom: 92px;
+}
+
+footer {
+  width: 100%;
+  border-top: 1px solid #AEADAE;
+  height: 60px !important;
+}
+
 
 footer * {
   display: inline-block;
@@ -212,7 +230,6 @@ li a:not(:hover), p a:not(:hover) {
   height: 2rem;
   font-size: 15pt;
   display: flex !important;
-  justify-content: center;
   align-items: center;
   }
 
@@ -289,7 +306,7 @@ h1 {
 
 .banner-article {
   color: #5a5a5a;
-  margin: 5.25% auto;
+  margin: 10.5vh auto;
   height: 60%;
   width: 60%;
   font-size: 17.5pt;
@@ -309,4 +326,20 @@ h1 {
 
 .koalendar {
   margin: 2% auto;
+}
+
+@media only screen and (min-width: 3072px) {
+  .banner-article {
+    font-size: 25pt;
+    margin-top: 25vh;
+  }
+
+  .m-t-1 {
+    margin-top: 30vh;
+  }
+
+  #koalendar {
+    width:100%;
+    height: 1320px; 
+  }
 }
