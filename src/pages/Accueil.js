@@ -9,6 +9,7 @@ const Accueil = () => {
     return (
         <>
             <Menu />
+
             <article className="banner-article">
                 <p>
                     EnVRAC est une structure qui vise à ouvrir des opportunités dans la production
