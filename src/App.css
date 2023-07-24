@@ -273,6 +273,10 @@ li a:not(:hover), p a:not(:hover) {
   margin-top: 20rem;
 }
 
+.m-b-1 {
+  margin-bottom: 10rem;
+}
+
 h1 {
   font-size: 22.5pt;
   text-transform: uppercase;
