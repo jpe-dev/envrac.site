@@ -3,11 +3,13 @@ import envracLogo from "../images/logo.jpeg";
 
 
 const handleClickScroll = (id) => {
-  const element = document.getElementById(id);
-  if (element) {
-    // 👇 Will scroll smoothly to the top of the next section
-    element.scrollIntoView({ behavior: 'smooth' });
-  }
+  setTimeout(() => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 100);
+
 };
 const Menu = () => {
 
