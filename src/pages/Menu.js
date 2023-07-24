@@ -1,7 +1,16 @@
 import { Link } from "react-router-dom";
 import envracLogo from "../images/logo.jpeg";
 
+
+const handleClickScroll = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    // 👇 Will scroll smoothly to the top of the next section
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 const Menu = () => {
+
   return (
     <>
       <nav className='sticky'>
@@ -15,8 +24,8 @@ const Menu = () => {
           <li>
             <Link to='/presentation'>présentation</Link>
             <div className="subnav">
-              <Link to='/presentation/#studio'>le studio</Link>
-              <Link to='/presentation/#work-space'>le work-space</Link>
+              <Link to='/presentation/#studio' onClick={() => handleClickScroll('studio')}>le studio</Link>
+              <Link to='/presentation/#work-space' onClick={() => handleClickScroll('work-space')}>le work-space</Link>
             </div>
           </li>
           <li>

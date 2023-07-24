@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 const Booking = () => {
     useEffect(() => {
-        document.body.classList.add('background');
+        document.body.classList.remove('background');
     }, []);
     return (
         <>

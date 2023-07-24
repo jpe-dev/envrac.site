@@ -1,5 +1,7 @@
 html {
   font-family: "Helvetica Neue", sans-serif !important;
+  scroll-behavior: smooth;
+  scroll-padding-top: 20rem;
 }
 html, nav, footer {
   background-color: #F6F2F7;
@@ -29,12 +31,38 @@ section {
 .content {
   width: 80%;
   margin: auto;
+  position: relative;
+}
+
+.content h1 {
+  margin-bottom: 5rem;
+  margin-top: 7rem;
+}
+
+.content p {
+  color: #5a5a5a;
+  font-size: 22.5pt;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  /* white-space: pre; */
+}
+
+.content p:last-child {
+  margin-bottom: 0;
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+    transform: translateY(-50%);
 }
 
 nav {
   opacity: 100%;
   height: auto;
   border-bottom: 1px solid #AEADAE;
+  z-index: 99;
 }
 
 .subnav {
@@ -228,6 +256,9 @@ li a:not(:hover), p a:not(:hover) {
 .w-25 {
   width: 25% !important;
 }
+.w-40 {
+  width: 40% !important;
+}
 .w-50 {
   width: 50% !important;
 }
@@ -236,6 +267,16 @@ li a:not(:hover), p a:not(:hover) {
 }
 .w-100 {
   width: 100% !important;
+}
+
+.m-t-1 {
+  margin-top: 20rem;
+}
+
+h1 {
+  font-size: 22.5pt;
+  text-transform: uppercase;
+  color: #5a5a5a;
 }
 
 .center {
@@ -261,18 +302,6 @@ li a:not(:hover), p a:not(:hover) {
   width: 85%;
   margin: 2% auto;
 }
-
-/* .banner-article::before {
-  content: "";
-  background-image: url('./images/banner.jpeg');
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.12;
-} */
 
 .koalendar {
   margin: 2% auto;
