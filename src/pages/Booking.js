@@ -1,12 +1,19 @@
 import React from 'react'
 import Menu from './Menu'
 import Footer from './Footer'
+import { useEffect } from 'react';
+
 
 const Booking = () => {
+    useEffect(() => {
+        document.body.classList.add('background');
+    }, []);
     return (
         <>
             <Menu />
-            <div>Booking</div>
+            <div className='koalendar'>
+                <iframe src="https://koalendar.com/e/advanced-session?embed=true " width="100%" height="660px" frameborder="0"></iframe>
+            </div>
             <Footer />
         </>
 

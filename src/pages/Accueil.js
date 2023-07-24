@@ -1,7 +1,11 @@
+import { useEffect } from "react"
 import Footer from "./Footer"
 import Menu from "./Menu"
 
 const Accueil = () => {
+    useEffect(() => {
+        document.body.classList.add('background');
+    }, []);
     return (
         <>
             <Menu />
