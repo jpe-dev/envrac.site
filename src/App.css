@@ -306,7 +306,7 @@ h1 {
 
 .banner-article {
   color: #5a5a5a;
-  margin: 10.5vh auto;
+  margin: 10.75vh auto;
   height: 60%;
   width: 60%;
   font-size: 17.5pt;
@@ -342,4 +342,30 @@ h1 {
     width:100%;
     height: 1320px; 
   }
+}
+
+#mailtoForm {
+  width: 50%;
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid #AEADAE;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #c0a4c8;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #A984B5;
 }

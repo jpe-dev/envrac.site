@@ -43,9 +43,9 @@ const Mail = () => {
     };
 
     return (
-        <section>
-            <form onSubmit={handleFormSubmit}>
-                <h2>Envoi de mail</h2>
+        <section className='content'>
+            <form onSubmit={handleFormSubmit} id='mailtoForm'>
+                <h1>Envoi de mail</h1>
                 <input
                     type='text'
                     name='subject'
@@ -58,9 +58,8 @@ const Mail = () => {
                     style={{ margin: "1rem 0" }}
                     placeholder="Texte de l'email"
                 />
-                <button type='submit'>
-                    click me
-                </button>
+                <br />
+                <input type='submit' />
             </form>
         </section>
     );
