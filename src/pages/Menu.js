@@ -29,6 +29,8 @@ const Menu = () => {
             <div className="subnav">
               <Link to='/presentation/#studio' onClick={() => handleClickScroll('studio')}>{t('menu_presentation_1')}</Link>
               <Link to='/presentation/#work-space' onClick={() => handleClickScroll('work-space')}>{t('menu_presentation_2')}</Link>
+              <Link to='/presentation/#equipe' onClick={() => handleClickScroll('equipe')}>{t('menu_presentation_3')}</Link>
+              <Link to='/presentation/#association' onClick={() => handleClickScroll('association')}>{t('menu_presentation_4')}</Link>
             </div>
           </li>
           <li>
@@ -55,10 +57,6 @@ const Menu = () => {
           </li>
           <li>
             <Link to='/contact'>{t('menu_contact')}</Link>
-            <div className="subnav">
-              <Link to='/contact/#mailtoForm'>{t('menu_contact_1')}</Link>
-              {/* <Link to='/contact/#association'>association</Link> */}
-            </div>
           </li>
           <li>
             <Link to='/booking'>{t('menu_agenda')}</Link>

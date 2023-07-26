@@ -74,7 +74,7 @@ nav {
   margin: 0px;
   padding: 0px;
   position: absolute;
-  top: 6.5rem;
+  top: 7.5rem;
   margin-left: 1.5rem;
   font-size: 14pt;
   transition: 0.3s;
@@ -97,7 +97,7 @@ nav {
 }
 
 .menu:hover {
-  height: 11rem;
+  height: 13rem;
 }
 
 .menu:hover .subnav {
@@ -106,7 +106,7 @@ nav {
 }
 
 .menu:hover li:first-child img {
-  margin-top: 12.5%;
+  margin-top: 17.5%;
 }
 
 .menu li {
