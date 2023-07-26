@@ -222,7 +222,7 @@ li a:not(:hover), p a:not(:hover) {
 }
 
 /* -- SCROLL TEXT -- */
-.a123456789 {
+/* .a123456789 {
   background-color: #fff;
   color: #5a5a5a;
   font-weight: bold;
@@ -243,7 +243,7 @@ li a:not(:hover), p a:not(:hover) {
   -moz-animation: my-animation 20s linear infinite;
   -webkit-animation: my-animation 20s linear infinite;
   animation: my-animation 20s linear infinite;
-}
+} */
 
 /* for Firefox */
 @-moz-keyframes my-animation {
