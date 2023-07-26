@@ -1,5 +1,7 @@
 import qs from 'qs';
 import { Linking } from 'react-native';
+import { useTranslation } from "react-i18next"
+
 
 async function sendEmail(to, subject, body, options = {}) {
     const { cc, bcc } = options;
@@ -32,6 +34,7 @@ async function sendEmail(to, subject, body, options = {}) {
 }
 const Mail = () => {
 
+    const { t } = useTranslation();
 
     // onSubmit function
     const handleFormSubmit = (e) => {
@@ -45,18 +48,18 @@ const Mail = () => {
     return (
         <section className='content'>
             <form onSubmit={handleFormSubmit} id='mailtoForm'>
-                <h1>Envoi de mail</h1>
+                <h1>{t('contact')}</h1>
                 <input
                     type='text'
                     name='subject'
                     style={{ margin: "1rem 0" }}
-                    placeholder="Objet"
+                    placeholder={t('mail_objet')}
                 />
                 <input
                     type='text'
                     name='body'
                     style={{ margin: "1rem 0" }}
-                    placeholder="Texte de l'email"
+                    placeholder={t('mail_text')}
                 />
                 <br />
                 <input type='submit' />

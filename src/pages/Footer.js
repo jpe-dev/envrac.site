@@ -1,13 +1,16 @@
 import { View } from 'react-native'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { useTranslation } from "react-i18next"
 
 const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <View id='footer-wrap'>
             <footer>
                 <p>EnVRAC Copyright 2023</p>
-                <p><a href='/cookiepolicy'>Cookie Policy</a>-<a href='/legalterms'>Legal Terms</a>-<a href='/privacypolicy'>Privacy Policy</a></p>
+                <p><a href='/cookiepolicy'>{t("policy_cookie")}</a>-<a href='/legalterms'>{t('legal_terms')}</a>-<a href='/privacypolicy'>{t('policy_privacy')}</a></p>
                 <p>
                     <a href='insta/envrac'>
                         <FontAwesomeIcon icon={icon({ name: 'instagram', style: 'brands' })} /></a>
@@ -20,7 +23,7 @@ const Footer = () => {
                     <a href='linkedin/envrac'>
                         <FontAwesomeIcon icon={icon({ name: 'linkedin', style: 'brands' })} /></a>
                 </p>
-                <p>dev by Sherokhi</p>
+                <p>dev {t('par')} Sherokhi</p>
             </footer>
         </View>
     )

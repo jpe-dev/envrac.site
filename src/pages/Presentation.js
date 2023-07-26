@@ -3,8 +3,10 @@ import Footer from "./Footer";
 import Menu from "./Menu";
 import studioImg from '../images/coding-man.jpg';
 import workSpaceImg from '../images/coding-man.jpg';
+import { useTranslation } from "react-i18next"
 
 const Presentation = () => {
+    const { t } = useTranslation();
     useEffect(() => {
         document.body.classList.remove('background');
     }, []);
@@ -12,16 +14,16 @@ const Presentation = () => {
         <>
             <Menu />
             <div className="content">
-                <h1 id="studio">le studio</h1>
-                <p className="w-40">Basé à Echallens, EnVRAC studio est spécialisé dans l’enregistrement de voix et le mixage professionnel.</p>
-                <p className="w-40">Le studio est composé d’un Control room principal et d’une petite Guest room.</p>
-                <p className="w-40">La polyvalence qu’offre les locaux permet de proposer différents services annexes, axés autour de la production musicale. (Voix off, Interview, Shooting photo, Artwork, etc.)</p>
+                <h1 id="studio">{t('menu_presentation_1')}</h1>
+                <p className="w-40">{t('pres_studio_1')}</p>
+                <p className="w-40">{t('pres_studio_2')}</p>
+                <p className="w-40">{t('pres_studio_3')}</p>
                 <img className="w-50 right" src={studioImg} alt="studio" />
             </div>
             <div className="content m-t-1 m-b-1">
-                <h1 id="work-space">le work-space</h1>
+                <h1 id="work-space">{t('menu_presentation_2')}</h1>
                 <p className="w-40">
-                    Un espace de Co-working équipé et dédié à la création visuelle, nous permet de proposer différents services annexes, axés autour de la production musicale. (voix off, interview, émissions, shooting photo, fond vert, artwork, etc.)
+                    {t('pres_work_1')}
                 </p>
                 <img className="w-50 right" src={workSpaceImg} alt="work-space" />
 

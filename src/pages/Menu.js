@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import envracLogo from "../images/logo.jpeg";
-
+import { useTranslation } from "react-i18next"
 
 const handleClickScroll = (id) => {
   setTimeout(() => {
@@ -12,6 +12,7 @@ const handleClickScroll = (id) => {
 
 };
 const Menu = () => {
+  const { t } = useTranslation();
 
   return (
     <>
@@ -21,46 +22,46 @@ const Menu = () => {
             <img src={envracLogo} alt='envrac logo' />
           </li>
           <li>
-            <Link to='/'>acceuil</Link>
+            <Link to='/'>{t('menu_accueil')}</Link>
           </li>
           <li>
-            <Link to='/presentation'>présentation</Link>
+            <Link to='/presentation'>{t('menu_presentation')}</Link>
             <div className="subnav">
-              <Link to='/presentation/#studio' onClick={() => handleClickScroll('studio')}>le studio</Link>
-              <Link to='/presentation/#work-space' onClick={() => handleClickScroll('work-space')}>le work-space</Link>
+              <Link to='/presentation/#studio' onClick={() => handleClickScroll('studio')}>{t('menu_presentation_1')}</Link>
+              <Link to='/presentation/#work-space' onClick={() => handleClickScroll('work-space')}>{t('menu_presentation_2')}</Link>
             </div>
           </li>
           <li>
-            <Link to='/services'>services</Link>
+            <Link to='/services'>{t('menu_services')}</Link>
             <div className="subnav">
-              <Link to='/services/#audio'>audio</Link>
-              <Link to='/services/#visuel'>visuel</Link>
-              <Link to='/services/#equipement'>equipement</Link>
+              <Link to='/services/#audio'>{t('menu_services_1')}</Link>
+              <Link to='/services/#visuel'>{t('menu_services_2')}</Link>
+              <Link to='/services/#equipement'>{t('menu_services_3')}</Link>
             </div>
           </li>
           <li>
-            <Link to='/docs'>docs</Link>
+            <Link to='/docs'>{t('menu_docs')}</Link>
             <div className="subnav">
-              <Link to='/docs/#lexique'>lexique</Link>
-              <Link to='/docs/#faq'>faq</Link>
+              <Link to='/docs/#lexique'>{t('menu_docs_1')}</Link>
+              <Link to='/docs/#faq'>{t('menu_docs_2')}</Link>
             </div>
           </li>
           <li>
-            <Link to='/portfolio'>portfolio</Link>
+            <Link to='/portfolio'>{t('menu_portfolio')}</Link>
             <div className="subnav">
-              <Link to='/portfolio/#releases'>releases</Link>
-              <Link to='/portfolio/#blog'>blog</Link>
+              <Link to='/portfolio/#releases'>{t('menu_portfolio_1')}</Link>
+              <Link to='/portfolio/#blog'>{t('menu_portfolio_2')}</Link>
             </div>
           </li>
           <li>
-            <Link to='/contact'>contact</Link>
+            <Link to='/contact'>{t('menu_contact')}</Link>
             <div className="subnav">
-              <Link to='/contact/#equipe'>équipe</Link>
-              <Link to='/contact/association'>association</Link>
+              <Link to='/contact/#mailtoForm'>{t('menu_contact_1')}</Link>
+              {/* <Link to='/contact/#association'>association</Link> */}
             </div>
           </li>
           <li>
-            <Link to='/booking'>booking</Link>
+            <Link to='/booking'>{t('menu_agenda')}</Link>
           </li>
         </ul>
       </nav>
