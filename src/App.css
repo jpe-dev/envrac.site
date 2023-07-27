@@ -52,6 +52,7 @@ section {
   margin-bottom: 1.5rem;
 }
 
+
 .content p:last-child {
   margin-bottom: 0;
 }
@@ -60,9 +61,14 @@ section {
   position: absolute;
   top: 50%;
   right: 15px;
-    transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
+.left {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
 nav {
   opacity: 100%;
   height: auto;
@@ -270,6 +276,10 @@ li a:not(:hover), p a:not(:hover) {
   }
 }
 
+.h-40 {
+  height: 40% !important;
+}
+
 .w-25 {
   width: 25% !important;
 }
@@ -279,8 +289,14 @@ li a:not(:hover), p a:not(:hover) {
 .w-50 {
   width: 50% !important;
 }
+.w-60 {
+  width: 60% !important;
+}
 .w-75 {
   width: 75% !important;
+}
+.w-80 {
+  width: 80% !important;
 }
 .w-100 {
   width: 100% !important;
@@ -294,6 +310,10 @@ li a:not(:hover), p a:not(:hover) {
   margin-bottom: 10rem;
 }
 
+.p-t-2_5p {
+  padding-top: 2.5%;
+}
+
 h1 {
   font-size: 22.5pt;
   text-transform: uppercase;
@@ -304,19 +324,21 @@ h1 {
   margin: 0 auto;
 }
 
-.banner-article {
-  color: #5a5a5a;
-  margin: 10.75vh auto;
-  height: 60%;
-  width: 60%;
-  font-size: 17.5pt;
-  font-weight: bold;
-  text-align: center;
-  position: relative;
+.justify-center {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.banner-article {
+  color: #5a5a5a;
+  height: 40%;
+  font-weight: bold;
+  font-size: 21.5pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 
 .banner-article p {
