@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Footer from "./Footer";
 import Menu from "./Menu";
 import { useTranslation } from "react-i18next";
-import envracBanner from "../images/banner.jpeg";
+import envracBanner from "../images/banner-transparent.png";
 
 const Accueil = () => {
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ const Accueil = () => {
           src={envracBanner}
           alt='envrac banner'
           className='w-80 p-t-2_5p'
-          style={{ opacity: 0.2 }}
+          style={{ opacity: 0.5 }}
         />
       </div>
       <article className='banner-article right w-50'>
