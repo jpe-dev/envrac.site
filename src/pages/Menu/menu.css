@@ -4,14 +4,15 @@ nav {
   height: auto;
   border-bottom: 1px solid #AEADAE;
   z-index: 99;
+  overflow: hidden;
 }
 
 .subnav {
   margin: 0px;
   padding: 0px;
   position: absolute;
-  top: 7.5rem;
-  margin-left: 1.5rem;
+  top: 9rem;
+  /* margin-left: 1.5rem; */
   font-size: 14pt;
   transition: 0.3s;
   visibility: hidden;
@@ -22,6 +23,7 @@ nav {
 .subnav a {
   text-align: left;
   display: block !important;
+  
 }
 
 .menu {
@@ -33,7 +35,7 @@ nav {
 }
 
 .menu:hover {
-  height: 13rem;
+  height: 15rem;
 }
 
 .menu:hover .subnav {
@@ -42,7 +44,7 @@ nav {
 }
 
 .menu:hover li:first-child img {
-  margin-top: 17.5%;
+  margin-top: 22.5%;
 }
 
 .menu li {
