@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import envracLogo from "../images/logo.jpeg";
+import envracLogo from "../../images/logo.jpeg";
 import { useTranslation } from "react-i18next"
+import './menu.css';
 
 const handleClickScroll = (id) => {
   setTimeout(() => {

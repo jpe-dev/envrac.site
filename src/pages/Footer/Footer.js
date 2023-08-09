@@ -2,7 +2,7 @@ import { View } from 'react-native'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { useTranslation } from "react-i18next"
-
+import "./footer.css"
 const Footer = () => {
     const { t } = useTranslation();
 

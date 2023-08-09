@@ -1,8 +1,8 @@
 import React from 'react'
-import Menu from './Menu'
-import Footer from './Footer'
+import Menu from '../Menu/Menu'
+import Footer from '../Footer/Footer'
 import { useEffect } from 'react';
-
+import "./booking.css"
 
 const Booking = () => {
     useEffect(() => {

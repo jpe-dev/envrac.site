@@ -1,18 +1,18 @@
 import { useEffect } from "react";
-import Footer from "./Footer"
-import Menu from "./Menu"
+import Footer from "../Footer/Footer"
+import Menu from "../Menu/Menu"
 
-const Docs = () => {
+const Portfolio = () => {
     useEffect(() => {
         document.body.classList.add('background');
     }, []);
     return (
         <>
             <Menu />
-            <div>Docs</div>
+            <div>Portfolio</div>
             <Footer />
         </>
     )
 }
 
-export default Docs
+export default Portfolio

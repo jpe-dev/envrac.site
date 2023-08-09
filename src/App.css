@@ -4,6 +4,7 @@ html {
   scroll-padding-top: 20rem;
   height: 100vh !important;
 }
+
 html, nav, footer {
   background-color: #F6F2F7;
 }
@@ -13,6 +14,7 @@ body {
   position: relative;
 }
 
+/** -- BANNER BEHIND BODY -- **/
 .background::before {
   content: ' ';
   display: block;
@@ -30,8 +32,17 @@ body {
   background-color: #F6F2F7;
 }
 
+
+/** -- GENERAL CONTENT DESIGN -- **/
+
 section {
   height: 100%;
+}
+
+h1 {
+  font-size: 22.5pt;
+  text-transform: uppercase;
+  color: #5a5a5a;
 }
 
 .content {
@@ -63,162 +74,19 @@ section {
   right: 15px;
   transform: translateY(-50%);
 }
+
 .left {
   position: absolute;
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
 }
-nav {
-  opacity: 100%;
-  height: auto;
-  border-bottom: 1px solid #AEADAE;
-  z-index: 99;
-}
-
-.subnav {
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
-  top: 7.5rem;
-  margin-left: 1.5rem;
-  font-size: 14pt;
-  transition: 0.3s;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility .3s linear, opacity .3s linear;
-}
-
-.subnav a {
-  text-align: left;
-  display: block !important;
-}
-
-.menu {
-  height: 7rem;
-  display: flex;
-  padding: 0;
-  justify-content:space-between;
-  transition: height 1s;
-}
-
-.menu:hover {
-  height: 13rem;
-}
-
-.menu:hover .subnav {
-  visibility: visible;
-  opacity: 1;
-}
-
-.menu:hover li:first-child img {
-  margin-top: 17.5%;
-}
-
-.menu li {
-  display: inline;
-  text-align: left;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  font-size: 22.5pt;
-  font-weight: 500;
-}
-
-
-.menu li:first-child {
-  vertical-align: middle;
-  display: table-cell;
-}
-
-.menu li:first-child img {
-  height: 7rem;
-  margin-top: 0;
-  transition: margin-top 1s;
-}
-
-.menu li:last-child {
-  margin-right: 5.125rem;
-}
-
-nav, .menu {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-}
 
 footer, nav {
   text-align: center;
 }
 
-#footer-wrap {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  height: 60px;
-}
-
-#root {
-  padding-bottom: 92px;
-}
-
-footer {
-  width: 100%;
-  border-top: 1px solid #AEADAE;
-  height: 60px !important;
-}
-
-
-footer * {
-  display: inline-block;
-} 
-
-footer p a {
-  margin: 0 0.20em;
-}
-
-footer p {
-  color: #AEADAE;
-}
-
-footer p {
-  margin-top: 2rem;
-  margin-bottom: 0.25em;
-}
-
-footer p:first-child {
-  float:left;
-  margin-left: 0.25em;
-}  
-
-footer p:last-child {
-  float: right;
-  margin-right: 0.25em;
-}
-
-footer p:nth-child(2) {
-  margin-inline: 0% 5%;
-}
-footer p, footer:not(:nth-child(3)) {
-  font-size: 13.5pt;
-}
-
-footer p:nth-child(3) {
-  font-size: 16pt;
-}
-a,
-a:visited,
-a:active {
-  text-decoration: none;
-  color: #A984B5;
-}
-
+/** -- LINKS COLOR --**/
 li:hover a, p:hover a {
   color: #A984B5;
 }
@@ -251,13 +119,13 @@ li a:not(:hover), p a:not(:hover) {
   animation: my-animation 20s linear infinite;
 } */
 
-/* for Firefox */
+/* -- FIREFOX ANIMATIONS --  */
 @-moz-keyframes my-animation {
   from { -moz-transform: translateX(100%); }
   to { -moz-transform: translateX(-100%); }
 }
 
-/* for Chrome */
+/* -- CHROME ANIMATIONS --  */
 @-webkit-keyframes my-animation {
   from { -webkit-transform: translateX(100%); }
   to { -webkit-transform: translateX(-100%); }
@@ -276,6 +144,7 @@ li a:not(:hover), p a:not(:hover) {
   }
 }
 
+/** -- ALIGNEMENT CLASSES --**/
 .h-40 {
   height: 40% !important;
 }
@@ -283,21 +152,27 @@ li a:not(:hover), p a:not(:hover) {
 .w-25 {
   width: 25% !important;
 }
+
 .w-40 {
   width: 40% !important;
 }
+
 .w-50 {
   width: 50% !important;
 }
+
 .w-60 {
   width: 60% !important;
 }
+
 .w-75 {
   width: 75% !important;
 }
+
 .w-80 {
   width: 80% !important;
 }
+
 .w-100 {
   width: 100% !important;
 }
@@ -314,12 +189,6 @@ li a:not(:hover), p a:not(:hover) {
   padding-top: 2.5%;
 }
 
-h1 {
-  font-size: 22.5pt;
-  text-transform: uppercase;
-  color: #5a5a5a;
-}
-
 .center {
   margin: 0 auto;
 }
@@ -330,6 +199,7 @@ h1 {
   align-items: center;
 }
 
+/** -- CONTENT BANNER -- **/
 .banner-article {
   color: #5a5a5a;
   height: 40%;
@@ -346,10 +216,7 @@ h1 {
   margin: 2% auto;
 }
 
-.koalendar {
-  margin: 2% auto;
-}
-
+/** -- 4K SCREEN -- **/
 @media only screen and (min-width: 3072px) {
   .banner-article {
     font-size: 25pt;

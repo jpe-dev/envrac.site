@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import Footer from "./Footer";
-import Menu from "./Menu";
+import Footer from "../Footer/Footer";
+import Menu from "../Menu/Menu";
 
 const PolicyTerms = () => {
   useEffect(() => {

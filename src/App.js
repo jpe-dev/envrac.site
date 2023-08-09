@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Accueil from './pages/Accueil';
-import Presentation from './pages/Presentation';
-import Services from './pages/Services';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
-import Booking from './pages/Booking';
-import Docs from './pages/Docs';
+import Accueil from './pages/Accueil/Accueil';
+import Presentation from './pages/Presentation/Presentation';
+import Services from './pages/Services/Services';
+import Portfolio from './pages/Portfolio/Portfolio';
+import Contact from './pages/Contact/Contact';
+import Booking from './pages/Booking/Booking';
+import Docs from './pages/Docs/Docs';
 import './App.css';
 
 function App() {

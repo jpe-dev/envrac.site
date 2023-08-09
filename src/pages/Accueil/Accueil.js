@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import Footer from "./Footer";
-import Menu from "./Menu";
+import Footer from "../Footer/Footer";
+import Menu from "../Menu/Menu";
 import { useTranslation } from "react-i18next";
-import envracBanner from "../images/banner-transparent.png";
+import envracBanner from "../../images/banner-transparent.png";
 
 const Accueil = () => {
   const { t } = useTranslation();
