@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import Footer from "../Footer/Footer"
-import Menu from "../Menu/Menu"
+import Menu from "../components/Menu"
+import Footer from "../components/Footer"
 
 const Services = () => {
     useEffect(() => {

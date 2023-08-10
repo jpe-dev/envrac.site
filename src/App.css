@@ -86,6 +86,10 @@ footer, nav {
   text-align: center;
 }
 
+.koalendar {
+  margin: 2% auto;
+}
+
 /** -- LINKS COLOR --**/
 li:hover a, p:hover a {
   color: #A984B5;

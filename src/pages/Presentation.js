@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import Footer from "../Footer/Footer";
-import Menu from "../Menu/Menu";
-import studioImg from '../../images/coding-man.jpg';
-import workSpaceImg from '../../images/coding-man.jpg';
 import { useTranslation } from "react-i18next"
+import Menu from "../components/Menu";
+import Footer from "../components/Footer";
+import studioImg from '../images/coding-man.jpg';
+import workSpaceImg from '../images/coding-man.jpg';
 
 const Presentation = () => {
     const { t } = useTranslation();

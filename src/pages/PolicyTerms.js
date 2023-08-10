@@ -1,20 +1,18 @@
 import { useEffect } from "react";
-import Footer from "../Footer/Footer"
-import Mail from "../Mail/Mail"
-import Menu from "../Menu/Menu"
+import Menu from "../components/Menu";
+import Footer from "../components/Footer";
 
-
-const Contact = () => {
+const PolicyTerms = () => {
     useEffect(() => {
         document.body.classList.add('background');
     }, []);
     return (
         <>
             <Menu />
-            <Mail />
+            <div>Policy Terms</div>
             <Footer />
         </>
-    )
-}
+    );
+};
 
-export default Contact
+export default PolicyTerms;
