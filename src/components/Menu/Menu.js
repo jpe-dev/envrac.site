@@ -58,6 +58,9 @@ const Menu = () => {
                     </li>
                     <li>
                         <Link to='/contact'>{t('menu_contact')}</Link>
+                        <div className="subnav">
+                            <Link to='/contact/#a_propos'>{t('menu_contact_3')}</Link>
+                        </div>
                     </li>
                     <li>
                         <Link to='/booking'>{t('menu_agenda')}</Link>
