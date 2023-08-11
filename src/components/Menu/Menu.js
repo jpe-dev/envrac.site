@@ -31,15 +31,15 @@ const Menu = () => {
                             <Link to='/presentation/#studio' onClick={() => handleClickScroll('studio')}>{t('menu_presentation_1')}</Link>
                             <Link to='/presentation/#work-space' onClick={() => handleClickScroll('work-space')}>{t('menu_presentation_2')}</Link>
                             <Link to='/presentation/#equipe' onClick={() => handleClickScroll('equipe')}>{t('menu_presentation_3')}</Link>
-                            <Link to='/presentation/#association' onClick={() => handleClickScroll('association')}>{t('menu_presentation_4')}</Link>
+                            <Link to='/presentation/#equipement' onClick={() => handleClickScroll('equipement')}>{t('menu_presentation_5')}</Link>
+                            {/* <Link to='/presentation/#association' onClick={() => handleClickScroll('association')}>{t('menu_presentation_4')}</Link> */}
                         </div>
                     </li>
                     <li>
                         <Link to='/services'>{t('menu_services')}</Link>
                         <div className="subnav">
                             <Link to='/services/#audio'>{t('menu_services_1')}</Link>
-                            <Link to='/services/#visuel'>{t('menu_services_2')}</Link>
-                            <Link to='/services/#equipement'>{t('menu_services_3')}</Link>
+                            {/* <Link to='/services/#visuel'>{t('menu_services_2')}</Link> */}
                         </div>
                     </li>
                     <li>
@@ -53,7 +53,7 @@ const Menu = () => {
                         <Link to='/portfolio'>{t('menu_portfolio')}</Link>
                         <div className="subnav">
                             <Link to='/portfolio/#releases'>{t('menu_portfolio_1')}</Link>
-                            <Link to='/portfolio/#blog'>{t('menu_portfolio_2')}</Link>
+                            {/* <Link to='/portfolio/#blog'>{t('menu_portfolio_2')}</Link> */}
                         </div>
                     </li>
                     <li>

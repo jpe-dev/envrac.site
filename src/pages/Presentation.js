@@ -31,7 +31,7 @@ const Presentation = () => {
 
             </div>
             <div className="content m-t-1 m-b-1">
-                <h1 id="equipment">{t('menu_presentation_5')}</h1>
+                <h1 id="equipement">{t('menu_presentation_5')}</h1>
                 <p className="w-100">
                     {t('pres_equ_1')}
                 </p>
