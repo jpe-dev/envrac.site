@@ -20,7 +20,7 @@ const Menu = () => {
             <nav className='sticky'>
                 <ul className='menu'>
                     <li>
-                        <img src={envracLogo} alt='envrac logo' />
+                        <Link to='/'><img src={envracLogo} alt='envrac logo' /></Link>
                     </li>
                     <li>
                         <Link to='/'>{t('menu_accueil')}</Link>
