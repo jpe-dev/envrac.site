@@ -46,7 +46,7 @@ const Menu = () => {
                         <Link to='/docs'>{t('menu_docs')}</Link>
                         <div className="subnav">
                             <Link to='/docs/#lexique'>{t('menu_docs_1')}</Link>
-                            <Link to='/docs/#faq'>{t('menu_docs_2')}</Link>
+                            <Link to='/docs/#faq' onClick={() => handleClickScroll('faq')}>{t('menu_docs_2')}</Link>
                         </div>
                     </li>
                     <li>
