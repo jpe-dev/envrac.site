@@ -44,7 +44,7 @@ footer p:last-child {
 }
 
 footer p:nth-child(2) {
-  margin-inline: 0% 5%;
+  margin-inline: 0% 10%;
 }
 
 footer p, footer:not(:nth-child(3)) {
@@ -56,7 +56,7 @@ footer p:nth-child(3) {
 }
 
 footer p:nth-child(4) {
-  margin-inline: 5% 0%;
+  margin-inline: 10% 0%;
 }
 
 a,
