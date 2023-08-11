@@ -30,6 +30,30 @@ const Presentation = () => {
                 <img className="w-50 right" src={workSpaceImg} alt="work-space" />
 
             </div>
+            <div className="content m-t-1 m-b-1">
+                <h1 id="equipment">{t('menu_presentation_5')}</h1>
+                <p className="w-100">
+                    {t('pres_equ_1')}
+                </p>
+                <p className="w-80">
+                    {t('pres_equ_2')}
+                </p>
+                <p className="w-80">
+                    {t('pres_equ_3')}
+                </p>
+                <p className="w-80">
+                    {t('pres_equ_4')}
+                </p>
+                <p className="w-80">
+                    {t('pres_equ_5')}
+                </p>
+                <p className="w-80">
+                    {t('pres_equ_6')}
+                </p>
+                <p className="w-80">
+                    {t('pres_equ_7')}
+                </p>
+            </div>
             <Footer />
         </>
     )
