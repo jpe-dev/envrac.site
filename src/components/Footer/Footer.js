@@ -4,8 +4,11 @@ import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { useTranslation } from "react-i18next"
 import "./footer.css"
 const Footer = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
+    const changeLanguageHandler = (lang) => {
+        i18n.changeLanguage(lang);
+    }
     return (
         <View id='footer-wrap'>
             <footer>
@@ -22,6 +25,9 @@ const Footer = () => {
                         <FontAwesomeIcon icon={icon({ name: 'facebook', style: 'brands' })} /></a>
                     <a href='linkedin/envrac'>
                         <FontAwesomeIcon icon={icon({ name: 'linkedin', style: 'brands' })} /></a>
+                </p>
+                <p>
+                    <span onClick={() => changeLanguageHandler('fr')}>FR</span> |   <span onClick={() => changeLanguageHandler('en')}>EN</span>
                 </p>
                 <p>dev {t('par')} Sherokhi</p>
             </footer>

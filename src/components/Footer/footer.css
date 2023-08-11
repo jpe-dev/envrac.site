@@ -46,6 +46,7 @@ footer p:last-child {
 footer p:nth-child(2) {
   margin-inline: 0% 5%;
 }
+
 footer p, footer:not(:nth-child(3)) {
   font-size: 13.5pt;
 }
@@ -53,6 +54,11 @@ footer p, footer:not(:nth-child(3)) {
 footer p:nth-child(3) {
   font-size: 16pt;
 }
+
+footer p:nth-child(4) {
+  margin-inline: 5% 0%;
+}
+
 a,
 a:visited,
 a:active {

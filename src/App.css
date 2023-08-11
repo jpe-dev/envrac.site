@@ -91,11 +91,15 @@ footer, nav {
 }
 
 /** -- LINKS COLOR --**/
-li:hover a, p:hover a {
+li:hover a, p:hover a, footer span:hover {
   color: #A984B5;
 }
 
-li a:not(:hover), p a:not(:hover) {
+footer span:hover {
+  cursor: pointer;
+}
+
+li a:not(:hover), p a:not(:hover), footer span:not(:hover) {
   color: #c0a4c8;
 }
 
