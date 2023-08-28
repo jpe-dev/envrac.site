@@ -89,6 +89,21 @@ footer, nav {
   margin: 2% auto;
 }
 
+.audio-img {
+  height: 145px;
+  width: 145px;
+  margin-left: 10rem;
+  border: 1px #a9a9a9 solid
+}
+
+.audio-content p:first-child {
+  margin-top: -2rem;
+}
+
+.purple-text {
+  color: #a57eb1;
+}
+
 /** -- LINKS COLOR --**/
 li:hover a, p:hover a, footer span:hover {
   color: #A984B5;
