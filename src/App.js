@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Accueil, Booking, Contact, Docs, Mail, PolicyTerms, Portfolio, Presentation, Services } from "./pages"
+import { Accueil, Booking, Contact, Docs, Portfolio, Presentation, Services } from "./pages"
 
 import './App.css';
 
