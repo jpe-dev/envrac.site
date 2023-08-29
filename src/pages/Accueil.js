@@ -13,7 +13,7 @@ const Accueil = () => {
     return (
         <>
             <Menu />
-            <div>
+            <div id="home_chapter">
                 <div className='w-50 justify-center h-40'>
                     <img
                         src={envracBanner}
@@ -22,13 +22,13 @@ const Accueil = () => {
                         style={{ opacity: 0.5 }}
                     />
                 </div>
-                <div className='banner-article w-50 right'>
+                <div className='banner-article w-50'>
                     <p>{t("accueil_1_2")}</p>
                     <p>{t("accueil_2_2")}</p>
                     <p>{t("accueil_3_2")}</p>
                 </div>
             </div>
-            <div className="w-100 justify-center" style={{ marginTop: '50%' }}>
+            <div className="w-100 justify-center" style={{ marginTop: '25%', marginBottom: '10%' }}>
                 <div className="w-80 centered-content">
                     <p>{t("accueil_1_4")}</p>
                     <p>{t("accueil_2_4")}</p>

@@ -93,11 +93,15 @@ footer, nav {
   height: 145px;
   width: 145px;
   margin-left: 10rem;
-  border: 1px #a9a9a9 solid
+  /* border: 1px #a9a9a9 solid */
 }
 
 .audio-content p:first-child {
   margin-top: -2rem;
+}
+
+.audio-content p:last-child {
+  margin-bottom: 5rem;
 }
 
 .purple-text {
@@ -222,18 +226,24 @@ li a:not(:hover), p a:not(:hover), footer span:not(:hover) {
 }
 
 /** -- CONTENT BANNER -- **/
+#home_chapter {
+  display: flex;
+  flex-direction: row;
+}
+
 .banner-article {
   color: #5a5a5a;
   font-weight: bold;
   font-size: 21.5pt;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .banner-article p {
-  width: 85%;
+  width: 100%;
   margin: 2% auto;
 }
 
