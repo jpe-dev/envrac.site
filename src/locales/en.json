@@ -48,5 +48,21 @@
   "contact": "Contact Us",
   "mail_objet": "Subject",
   "mail_text": "Email Text",
-  "par": "by"
+  "par": "by",
+  "service_audio_rec_1": "<1>RECORDING</1> is a crucial stage in production as it guarantees an optimal result for the rest of the process.",
+  "service_audio_rec_2": "A poor performance, diction issues, or improperly recorded audio cannot be rectified during the mix.",
+  "service_audio_rec_3": "When it comes to recording, it's essential to have a clear understanding of your performance or script.",
+  "service_audio_mix_1": "<1>MIXING</1> is a highly important process, during which we manage and blend different sound sources together. Additionally, this involves handling dynamics, stereo, effects, and more.",
+  "service_audio_mix_2": "This stage gives us full control to achieve a quality result.",
+  "service_audio_mix_3": "Here are the mixing steps for a track:",
+  "service_audio_mix_4": "Track cleaning, editing, alignment, pitch correction (vocals), mixing, exporting the MIX and STEMS.",
+    "service_audio_master_1":"<1>MASTERING</1>",
+  "service_audio_master_2": "This very subtle stage, which shapes and brings the track to its final form, involves 'standardizing' the product, adjusting loudness, optimizing quality for different platforms, and ensuring good definition on various playback devices.",
+  "service_audio_master_3": "For an optimal result, it's crucial that the mixing is of high quality. A mix that doesn't sound good will lead to complications during mastering; a 'bad' mix can't be saved at this stage.",
+  "service_audio_master_4": "Here are the two mastering options we practice.",
+  "service_audio_master_5": "STEREO Mastering:",
+  "service_audio_master_6": "Processing a stereo file for a classic mastering process.",
+  "service_audio_master_7": "STEM Mastering:",
+  "service_audio_master_8": "Processing up to 6 groups (STEMS), allowing more control over elements during the process.<1/>Example groups: VOICE, SYNTH, BASS, DRUMS, FX, or others; based on needs.",
+  "span_purple": "purple-text"
 }

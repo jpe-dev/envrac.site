@@ -40,9 +40,10 @@ section {
 }
 
 h1 {
-  font-size: 22.5pt;
+  font-size: 45pt;
   text-transform: uppercase;
-  color: #5a5a5a;
+  color: #a9a9a9;
+  margin-left: -5rem;
 }
 
 .content {
@@ -107,15 +108,8 @@ footer, nav {
   height: 145px;
   width: 145px;
   margin-left: 10rem;
+  margin-top: 2rem;
   /* border: 1px #a9a9a9 solid */
-}
-
-.audio-content p:first-child {
-  margin-top: -2rem;
-}
-
-.audio-content p:last-child {
-  margin-bottom: 5rem;
 }
 
 .purple-text {

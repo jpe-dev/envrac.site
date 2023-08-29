@@ -51,5 +51,21 @@
   "contact": "contactez-nous",
   "mail_objet": "Objet",
   "mail_text": "Texte de l'email",
-  "par":"par"
+  "par":"par",
+  "service_audio_rec_1":"L'<1>ENREGISTREMENT</1> est une étape cruciale dans la production car cela garantit un résultat optimal pour la suite du processus.",
+  "service_audio_mix_1":"Le <1>MIXAGE</1> est un processus très important, durant lequel on gères et mélange les différentes sources sonores entre elles. S’ajoute à ça, la gestion de la dynamique, la stéréo, les effets et plus encore.",
+  "service_audio_master_1":"Le <1>MASTERING</1>",
+  "service_audio_rec_2":"Une mauvaise performance, un problème de diction ou un enregistrement mal effectué ne sera pas rattrapable durant le mix.",
+  "service_audio_rec_3":"Dans le cadre d’un enregistrement, il est important d’être au clair avec sa prestation ou son texte.",
+  "service_audio_mix_2":"Cette étape nous donnes le plein contrôle afin d’obtenir un résultat de qualité.",
+  "service_audio_mix_3":"Voici les étapes de mixage pour un morceau :",
+  "service_audio_mix_4":"Nettoyage des pistes, édition, alignement, pitch correction (voix), mixage, export du MIX et des STEMS.",
+  "service_audio_master_2": "Cette étape très subtile, qui façonne et amène le morceau à sa forme finale ; consiste à « standardiser » le produit, adapter le Loudness (volume ressenti), optimiser la qualité pour les différentes plateformes et assurer une bonne définition sur les différents supports d’écoutes.",
+  "service_audio_master_3": "Pour un rendu optimal, il est très important que le mixage soit de bonne qualité.Un mix qui ne sonne pas bien, apportera des complications lors du mastering ; on ne sauve pas un « mauvais » mix lors de cette étape.",
+  "service_audio_master_4": "Voici les deux options que nous pratiquons pour le mastering.",
+  "service_audio_master_5": "STEREO Mastering :",
+  "service_audio_master_6": "Traitement d’un fichier stéréo pour un processus classique.",
+  "service_audio_master_7": "STEM Mastering :",
+  "service_audio_master_8":"Traitement jusqu’à 6 groupes (STEMS), permettant d’avoir le contrôle sur plus d’élément lors du processus.<1/>Exemple groupe : VOIX, SYNTH, BASS, DRUMS, FX, ou autres ; en fonction des besoins.",
+  "span_purple":"purple-text"
 }
