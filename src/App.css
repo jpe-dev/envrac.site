@@ -69,6 +69,20 @@ h1 {
   margin-bottom: 0;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
 .right {
   position: absolute;
   right: 15px;
