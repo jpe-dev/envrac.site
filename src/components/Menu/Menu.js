@@ -30,9 +30,8 @@ const Menu = () => {
                         <div className="subnav">
                             <Link to='/presentation/#studio' onClick={() => handleClickScroll('studio')}>{t('menu_presentation_1')}</Link>
                             <Link to='/presentation/#work-space' onClick={() => handleClickScroll('work-space')}>{t('menu_presentation_2')}</Link>
-                            <Link to='/presentation/#equipe' onClick={() => handleClickScroll('equipe')}>{t('menu_presentation_3')}</Link>
                             <Link to='/presentation/#equipement' onClick={() => handleClickScroll('equipement')}>{t('menu_presentation_5')}</Link>
-                            {/* <Link to='/presentation/#association' onClick={() => handleClickScroll('association')}>{t('menu_presentation_4')}</Link> */}
+                            <Link to='/presentation/#association' onClick={() => handleClickScroll('association')}>{t('menu_presentation_4')}</Link>
                         </div>
                     </li>
                     <li>
@@ -40,6 +39,8 @@ const Menu = () => {
                         <div className="subnav">
                             <Link to='/services/#audio'>{t('menu_services_1')}</Link>
                             {/* <Link to='/services/#visuel'>{t('menu_services_2')}</Link> */}
+                            {/* <Link to='/services/#cours'>{t('menu_services_2')}</Link> */}
+                            {/* <Link to='/services/#location'>{t('menu_services_2')}</Link> */}
                         </div>
                     </li>
                     <li>
@@ -60,6 +61,8 @@ const Menu = () => {
                         <Link to='/contact'>{t('menu_contact')}</Link>
                         <div className="subnav">
                             <Link to='/contact/#a_propos'>{t('menu_contact_3')}</Link>
+                            <Link to='/contact/#equipe' onClick={() => handleClickScroll('equipe')}>{t('menu_presentation_3')}</Link>
+
                         </div>
                     </li>
                     <li>
