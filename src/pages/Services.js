@@ -7,7 +7,6 @@ import record from '../images/record.png';
 import mix from '../images/mix.png';
 import master from '../images/master.png';
 
-
 const Services = () => {
     const { t } = useTranslation();
 
@@ -19,6 +18,11 @@ const Services = () => {
             <Menu />
             <div className="content">
                 <h1>Audio</h1>
+                <p><Trans i18nKey="service_audio_intro_1">EnVRAC propose de l’enregistrement audio, du mixage, du mastering.<br />Ainsi que du beatmaking, de la composition et de l’arrangement.</Trans></p>
+                <p>{t('service_audio_intro_2')}</p>
+                <p><Trans i18nKey="service_audio_intro_3">En disposant de différents forfaits, nous garantissons un service adapté à tous.<br />(Tous les détails dans l’onglet <a href="/booking">RESERVATION</a>)</Trans></p>
+                <p>{t('service_audio_intro_4')}</p>
+                <hr></hr>
                 <div className="flex-row space-between">
                     <img className="audio-img" src={record} alt="record" />
                     <div className="w-75">

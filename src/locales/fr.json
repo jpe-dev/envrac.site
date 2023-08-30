@@ -67,5 +67,9 @@
   "service_audio_master_6": "Traitement d’un fichier stéréo pour un processus classique.",
   "service_audio_master_7": "STEM Mastering :",
   "service_audio_master_8":"Traitement jusqu’à 6 groupes (STEMS), permettant d’avoir le contrôle sur plus d’élément lors du processus.<1/>Exemple groupe : VOIX, SYNTH, BASS, DRUMS, FX, ou autres ; en fonction des besoins.",
+  "service_audio_intro_1":"EnVRAC propose de l’enregistrement audio, du mixage, du mastering.<1/>Ainsi que du beatmaking, de la composition et de l’arrangement.",
+  "service_audio_intro_2":"Enregistrer un morceau, une voix OFF, un jingle, ou autres, sont possibles.",
+  "service_audio_intro_3":"En disposant de différents forfaits, nous garantissons un service adapté à tous.<1 />(Tous les détails dans l’onglet <3 href='/booking'>RESERVATION</3>)",
+  "service_audio_intro_4":"Concernant des projets importants, il est possible d’adapter une solution sur mesure qui convient aux attentes.",
   "span_purple":"purple-text"
 }
