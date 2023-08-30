@@ -57,7 +57,7 @@ h1 {
   margin-top: 7rem;
 }
 
-.content p, .centered-content p {
+.content p, .centered-content p, p {
   color: #5a5a5a;
   font-size: 22.5pt;
   font-weight: bold;
@@ -96,7 +96,7 @@ h1 {
   transform: translateY(-50%);
 }
 
-footer, nav {
+footer, nav, .text-center {
   text-align: center;
 }
 
@@ -234,9 +234,10 @@ li a:not(:hover), p a:not(:hover), footer span:not(:hover) {
 }
 
 /** -- CONTENT BANNER -- **/
-#home_chapter {
+#home-article {
   display: flex;
   flex-direction: row;
+  margin-top: 10rem;
 }
 
 .banner-article {
