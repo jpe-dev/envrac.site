@@ -28,8 +28,8 @@ const Accueil = () => {
                     <p>{t("accueil_3_2")}</p>
                 </div>
             </div>
-            <div className="w-100 justify-center" style={{ marginTop: '25%', marginBottom: '10%' }}>
-                <div className="w-75 flex-col justify-center text-center">
+            <div className="w-100 justify-center content" style={{ marginTop: '25%', marginBottom: '10%' }}>
+                <div className="w-60 flex-col justify-center text-center">
                     <p>{t("accueil_1_4")}</p>
                     <p>{t("accueil_2_4")}</p>
                     <p>{t("accueil_3_4")}</p>
