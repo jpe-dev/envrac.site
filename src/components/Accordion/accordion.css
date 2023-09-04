@@ -1,0 +1,57 @@
+
+.accordion {
+  max-width: 600px;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-title {
+  cursor: pointer;
+  background-color: #c0a4c8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.accordion-title:hover {
+  background-color: #A984B5;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+    background-color: #A984B5;
+    animation-name: visibilityOut;
+    animation-duration: 1s;
+}
+
+.accordion-content.open {
+  animation-name: visibilityIn;
+  animation-duration: 1s;
+}
+
+@keyframes visibilityIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes visibilityOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

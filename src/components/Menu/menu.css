@@ -14,7 +14,6 @@ nav {
   top: 9rem;
   /* margin-left: 1.5rem; */
   font-size: 14pt;
-  transition: 0.3s;
   visibility: hidden;
   opacity: 0;
   transition: visibility .5s linear, opacity .5s linear;
