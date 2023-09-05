@@ -6,6 +6,7 @@
   margin-right: auto;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .accordion-title {
@@ -27,13 +28,10 @@
 
 .accordion-content {
     background-color: #A984B5;
-    animation-name: visibilityOut;
-    animation-duration: 1s;
 }
 
 .accordion-content.open {
-  animation-name: visibilityIn;
-  animation-duration: 1s;
+  animation: visibilityIn 2s ease-in;
 }
 
 @keyframes visibilityIn {
@@ -43,15 +41,5 @@
 
   to {
     opacity: 1;
-  }
-}
-
-@keyframes visibilityOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
   }
 }
