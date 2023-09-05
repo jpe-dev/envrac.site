@@ -1,7 +1,7 @@
 export const accordionData = [
   {
     id: "1",
-    title: "Forfait Essentiel",
+    title: "booking_essentiel",
     content: (
       <iframe
         src='https://koalendar.com/e/forfait-essentiel?embed=true'
@@ -14,7 +14,7 @@ export const accordionData = [
   },
   {
     id: "2",
-    title: "Forfait Avancé",
+    title: "booking_avance",
     content: (
       <iframe
         src='https://koalendar.com/e/forfait-avance?embed=true '
@@ -27,7 +27,7 @@ export const accordionData = [
   },
   {
     id: "3",
-    title: "Forfait Deluxe",
+    title: "booking_deluxe",
     content: (
       <iframe
         src='https://koalendar.com/e/forfait-deluxe?embed=true '
@@ -40,7 +40,7 @@ export const accordionData = [
   },
   {
     id: 4,
-    title: "Forfait Maestro",
+    title: "booking_maestro",
     content: (
       <iframe
         src='https://koalendar.com/e/forfait-maestro?embed=true '
