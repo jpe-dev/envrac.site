@@ -31,12 +31,12 @@
 }
 
 .accordion-content.open {
-  animation: visibilityIn 2s ease-in;
+  animation: visibilityIn .5s ease-in;
 }
 
 @keyframes visibilityIn {
   from {
-    opacity: 0;
+    opacity: 0.5;
   }
 
   to {

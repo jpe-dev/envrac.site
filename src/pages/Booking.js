@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 import Accordion from "../components/Accordion";
+import { accordionData } from "../components/Accordion/booking";
 
 const Booking = () => {
   useEffect(() => {
@@ -11,7 +12,7 @@ const Booking = () => {
   return (
     <>
       <Menu />
-      <Accordion></Accordion>
+      <Accordion accordionData={accordionData}></Accordion>
       <Footer />
     </>
   );

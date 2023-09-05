@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { accordionData } from "./content";
 import "./accordion.css";
 
-const Accordion = () => {
+const Accordion = (props) => {
   const [activeTab, setActiveTab] = useState(-1);
   const handleAccordionClick = (id) => {
     setActiveTab((prevActiveTab) => (prevActiveTab === id ? -1 : id));
@@ -10,7 +9,7 @@ const Accordion = () => {
 
   return (
     <div className='accordion'>
-      {accordionData.map(({ id, title, content }) => (
+      {props.accordionData.map(({ id, title, content }) => (
         <div className='accordion-item' key={id}>
           <div
             className='accordion-title'
