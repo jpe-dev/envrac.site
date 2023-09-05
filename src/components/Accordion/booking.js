@@ -8,6 +8,7 @@ export const accordionData = [
         width='100%'
         height='875px'
         frameborder='0'
+        title='essentiel'
       ></iframe>
     ),
   },
@@ -20,6 +21,7 @@ export const accordionData = [
         width='100%'
         height='875px'
         frameborder='0'
+        title='avance'
       ></iframe>
     ),
   },
@@ -32,6 +34,7 @@ export const accordionData = [
         width='100%'
         height='875px'
         frameborder='0'
+        title='deluxe'
       ></iframe>
     ),
   },
@@ -44,6 +47,7 @@ export const accordionData = [
         width='100%'
         height='925px'
         frameborder='0'
+        title='maestro'
       ></iframe>
     ),
   },
