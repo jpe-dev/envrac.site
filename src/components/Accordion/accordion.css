@@ -1,44 +1,44 @@
 .accordion {
-  margin-top: 5rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .accordion-title {
-  cursor: pointer;
-  background-color: #c0a4c8;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-transform: capitalize;
+    cursor: pointer;
+    background-color: #c0a4c8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: capitalize;
 }
 
 .accordion-title:hover {
-  background-color: #A984B5;
+    background-color: #a984b5;
 }
 
 .accordion-title,
 .accordion-content {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 .accordion-content {
-    background-color: #A984B5;
+    background-color: #a984b5;
 }
 
 .accordion-content.open {
-  animation: visibilityIn .5s ease-in;
+    animation: visibilityIn 0.5s ease-in;
 }
 
 @keyframes visibilityIn {
-  from {
-    opacity: 0.5;
-  }
+    from {
+        opacity: 0.5;
+    }
 
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }

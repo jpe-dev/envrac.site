@@ -1,67 +1,66 @@
-
 #root {
-  padding-bottom: 92px;
+    padding-bottom: 92px;
 }
 #footer-wrap {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  height: 60px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 60px;
 }
 
 footer {
-  width: 100%;
-  border-top: 1px solid #AEADAE;
-  height: 60px !important;
+    width: 100%;
+    border-top: 1px solid #aeadae;
+    height: 60px !important;
 }
-
 
 footer * {
-  display: inline-block;
-} 
+    display: inline-block;
+}
 
 footer p a {
-  margin: 0 0.20em;
+    margin: 0 0.2em;
 }
 
 footer p {
-  color: #AEADAE;
+    color: #aeadae;
 }
 
 footer p {
-  margin-top: 2rem;
-  margin-bottom: 0.25em;
+    margin-top: 2rem;
+    margin-bottom: 0.25em;
 }
 
 footer p:first-child {
-  float:left;
-  margin-left: 0.25em;
-}  
+    float: left;
+    margin-left: 0.25em;
+}
 
 footer p:last-child {
-  float: right;
-  margin-right: 0.25em;
+    float: right;
+    margin-right: 0.25em;
 }
 
 footer p:nth-child(2) {
-  margin-inline: 0% 10%;
+    margin-inline: 0% 10%;
 }
 
-footer p, footer:not(:nth-child(3)) {
-  font-size: 13.5pt;
+footer p,
+footer:not(:nth-child(3)) {
+    font-size: 13.5pt;
 }
 
 footer p:nth-child(3) {
-  font-size: 16pt;
+    font-size: 16pt;
 }
 
 footer p:nth-child(4) {
-  margin-inline: 10% 0%;
+    margin-inline: 10% 0%;
 }
 
 a,
 a:visited,
 a:active {
-  text-decoration: none;
-  color: #A984B5;
+    text-decoration: none;
+    color: #a984b5;
 }

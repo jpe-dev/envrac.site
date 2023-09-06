@@ -1,85 +1,83 @@
-
 nav {
-  opacity: 100%;
-  height: auto;
-  border-bottom: 1px solid #AEADAE;
-  z-index: 99;
-  overflow: hidden;
+    opacity: 100%;
+    height: auto;
+    border-bottom: 1px solid #aeadae;
+    z-index: 99;
+    overflow: hidden;
 }
 
 .subnav {
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
-  top: 9rem;
-  /* margin-left: 1.5rem; */
-  font-size: 14pt;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility .5s linear, opacity .5s linear;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 9rem;
+    /* margin-left: 1.5rem; */
+    font-size: 14pt;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s linear, opacity 0.5s linear;
 }
 
 .subnav a {
-  text-align: left;
-  display: block !important;
-  
+    text-align: left;
+    display: block !important;
 }
 
 .menu {
-  height: 7rem;
-  display: flex;
-  padding: 0;
-  justify-content:space-between;
-  transition: height 1s;
+    height: 7rem;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    transition: height 1s;
 }
 
 .menu:hover {
-  height: 15rem;
+    height: 15rem;
 }
 
 .menu:hover .subnav {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .menu:hover li:first-child img {
-  margin-top: 22.5%;
+    margin-top: 22.5%;
 }
 
 .menu li {
-  display: inline;
-  text-align: left;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  font-size: 22.5pt;
-  font-weight: 500;
+    display: inline;
+    text-align: left;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-size: 22.5pt;
+    font-weight: 500;
 }
 
-
 .menu li:first-child {
-  vertical-align: middle;
-  display: table-cell;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 .menu li:first-child img {
-  height: 7rem;
-  margin-top: 0;
-  transition: margin-top 1s;
+    height: 7rem;
+    margin-top: 0;
+    transition: margin-top 1s;
 }
 
 .menu li:last-child {
-  margin-right: 5.125rem;
+    margin-right: 5.125rem;
 }
 
-nav, .menu {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+nav,
+.menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
