@@ -8,4 +8,14 @@ import Portfolio from "./Portfolio";
 import Presentation from "./Presentation";
 import Services from "./Services";
 
-export { Accueil, Booking, Contact, Docs, Mail, PolicyTerms, Portfolio, Presentation, Services };
+export {
+    Accueil,
+    Booking,
+    Contact,
+    Docs,
+    Mail,
+    PolicyTerms,
+    Portfolio,
+    Presentation,
+    Services,
+};

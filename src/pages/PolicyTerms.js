@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 const PolicyTerms = () => {
     useEffect(() => {
-        document.body.classList.add('background');
+        document.body.classList.add("background");
     }, []);
     return (
         <>

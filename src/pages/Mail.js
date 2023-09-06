@@ -1,7 +1,6 @@
-import qs from 'qs';
-import { Linking } from 'react-native';
-import { useTranslation } from "react-i18next"
-
+import qs from "qs";
+import { Linking } from "react-native";
+import { useTranslation } from "react-i18next";
 
 async function sendEmail(to, subject, body, options = {}) {
     const { cc, bcc } = options;
@@ -14,7 +13,7 @@ async function sendEmail(to, subject, body, options = {}) {
         subject: subject,
         body: body,
         cc: cc,
-        bcc: bcc
+        bcc: bcc,
     });
 
     console.log(query);
@@ -27,13 +26,12 @@ async function sendEmail(to, subject, body, options = {}) {
     const canOpen = await Linking.canOpenURL(url);
 
     if (!canOpen) {
-        throw new Error('Provided URL can not be handled');
+        throw new Error("Provided URL can not be handled");
     }
 
     return Linking.openURL(url);
 }
 const Mail = () => {
-
     const { t } = useTranslation();
 
     // onSubmit function
@@ -42,31 +40,30 @@ const Mail = () => {
         let subject = e.target.subject.value;
         let body = e.target.body.value;
 
-        sendEmail('info@envrac.net', subject, body);
+        sendEmail("info@envrac.net", subject, body);
     };
 
     return (
         <section className='content'>
             <form onSubmit={handleFormSubmit} id='mailtoForm'>
-                <h1>{t('contact')}</h1>
+                <h1>{t("contact")}</h1>
                 <input
                     type='text'
                     name='subject'
                     style={{ margin: "1rem 0" }}
-                    placeholder={t('mail_objet')}
+                    placeholder={t("mail_objet")}
                 />
                 <input
                     type='text'
                     name='body'
                     style={{ margin: "1rem 0" }}
-                    placeholder={t('mail_text')}
+                    placeholder={t("mail_text")}
                 />
                 <br />
                 <input type='submit' />
             </form>
         </section>
     );
+};
 
-}
-
-export default Mail
+export default Mail;

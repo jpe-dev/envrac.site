@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import Menu from "../components/Menu"
-import Footer from "../components/Footer"
+import Menu from "../components/Menu";
+import Footer from "../components/Footer";
 
 const Portfolio = () => {
     useEffect(() => {
-        document.body.classList.add('background');
+        document.body.classList.add("background");
     }, []);
     return (
         <>
@@ -12,7 +12,7 @@ const Portfolio = () => {
             <div>Portfolio</div>
             <Footer />
         </>
-    )
-}
+    );
+};
 
-export default Portfolio
+export default Portfolio;
