@@ -47,7 +47,7 @@ const Services = () => {
                                 L'
                                 <span className={t("span_purple")}>
                                     ENREGISTREMENT
-                                </span>{" "}
+                                </span>
                                 est une étape cruciale dans la production car
                                 cela garantit un résultat optimal pour la suite
                                 du processus.
@@ -64,8 +64,8 @@ const Services = () => {
                     <div className='w-75'>
                         <p>
                             <Trans i18nKey='service_audio_mix_1'>
-                                Le{" "}
-                                <span className={t("span_purple")}>MIXAGE</span>{" "}
+                                Le
+                                <span className={t("span_purple")}>MIXAGE</span>
                                 est un processus très important, durant lequel
                                 on gères et mélange les différentes sources
                                 sonores entre elles. S’ajoute à ça, la gestion
@@ -85,7 +85,7 @@ const Services = () => {
                     <div className='w-75'>
                         <p>
                             <Trans i18nKey='service_audio_master_1'>
-                                Le{" "}
+                                Le
                                 <span className={t("span_purple")}>
                                     MASTERING
                                 </span>
