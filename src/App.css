@@ -118,6 +118,49 @@ footer, nav, .text-center {
   color: #a57eb1;
 }
 
+.team-card-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+
+.team-card {
+  width: 50%;
+}
+
+.team-upper {
+  display: flex;
+  flex-direction: row;
+}
+
+.team-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.team-description {
+  padding: 1rem;
+  margin-block-start: 0;
+  font-size: 15pt !important;
+}
+
+.team-bottom p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.team-bottom p:first-child {
+  margin-top: 0.5rem;
+}
+
+.team-name {
+  font-size: 22.5pt !important;
+}
+
+.team-title {
+  font-size: 19.5pt !important;
+}
+
 /** -- LINKS COLOR --**/
 li:hover a, p:hover a, footer span:hover {
   color: #A984B5;
