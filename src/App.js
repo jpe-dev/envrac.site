@@ -10,7 +10,7 @@ import {
 } from "./pages";
 
 import "./App.css";
-
+import "./responsive.css";
 function App() {
     return (
         <BrowserRouter>
