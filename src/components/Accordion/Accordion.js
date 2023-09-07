@@ -10,16 +10,14 @@ const Accordion = (props) => {
     };
 
     return (
-        <div className='accordion'>
+        <div className={`accordion${props.class ? " " + props.class : ""}`}>
             {props.accordionData.map(({ id, title, content }) => (
-                <div className='accordion-item' key={id}>
+                <div className={`accordion-item`} key={id}>
                     <div
                         className='accordion-title'
                         onClick={() => handleAccordionClick(id)}
                     >
-                        <div>
-                            {t("booking_forfait")} {t(title)}
-                        </div>
+                        <div>{t(title)}</div>
                         <div>{activeTab === id ? "-" : "+"}</div>
                     </div>
                     {activeTab === id && (
