@@ -83,8 +83,8 @@
     "booking_1": "Voici les différents forfait, réservez votre session dés maintenant !",
     "booking_2": "Pour toute demande spéciale ou question, n’hésitez pas à nous contactez par mail ou téléphone.",
     "booking_forfait": "forfait",
-    "booking_essentiel": "essentiel",
-    "booking_avance": "avancé",
-    "booking_deluxe": "deluxe",
-    "booking_maestro": "maestro"
+    "booking_essentiel": "Forfait Essentiel",
+    "booking_avance": "Forfait Avancé",
+    "booking_deluxe": "Forfait Deluxe",
+    "booking_maestro": "Forfait Maestro"
 }
