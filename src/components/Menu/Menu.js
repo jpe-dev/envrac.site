@@ -24,9 +24,6 @@ const Menu = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to='/'>{t("menu_accueil")}</Link>
-                    </li>
-                    <li>
                         <Link to='/presentation'>{t("menu_presentation")}</Link>
                         <div className='subnav'>
                             <Link
