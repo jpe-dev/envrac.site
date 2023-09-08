@@ -19,7 +19,7 @@ const Docs = () => {
             <Menu />
             <div className='content'>
                 <h1>{t("menu_docs_1")}</h1>
-                <div className='w-100 flex-row'>
+                <div className='w-100 flex-row' id='lexique'>
                     <div className='w-50'>
                         <Accordion
                             accordionData={lexicon}
@@ -36,7 +36,7 @@ const Docs = () => {
                     </div>
                 </div>
                 <h1>{t("menu_docs_2")}</h1>
-                <div className='w-100 flex-row'>
+                <div className='w-100 flex-row' id='faq'>
                     <div className='w-50'>
                         <Accordion
                             accordionData={faq}

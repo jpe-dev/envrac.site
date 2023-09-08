@@ -13,6 +13,7 @@ const Contact = () => {
     return (
         <>
             <Menu />
+            <div id='a_propos'></div>
             <Mail />
             <div className='content'>
                 <hr></hr>
