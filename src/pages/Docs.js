@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Menu from "../components/Menu";
 import Footer from "../components/Footer";
-import { useState } from "react";
 import Accordion from "../components/Accordion/Accordion";
 import { faq } from "../components/Accordion/faq";
 import { faq2 } from "../components/Accordion/faq2";
@@ -11,14 +10,6 @@ import { useTranslation } from "react-i18next";
 
 const Docs = () => {
     const { t } = useTranslation();
-    const [openAccordion, setOpenAccordion] = useState(null);
-    const handleAccordionClick = (index) => {
-        if (index !== openAccordion) {
-            setOpenAccordion(index);
-        } else {
-            setOpenAccordion(null);
-        }
-    };
     useEffect(() => {
         document.body.classList.add("background");
     }, []);
