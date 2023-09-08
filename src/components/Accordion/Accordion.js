@@ -10,7 +10,11 @@ const Accordion = (props) => {
     };
 
     return (
-        <div className={`accordion${props.class ? " " + props.class : ""}`}>
+        <div
+            className={`accordion${props.class ? " " + props.class : ""} ${
+                props.inverted ? "inverted-colors" : ""
+            }`}
+        >
             {props.accordionData.map(({ id, title, content }) => (
                 <div className={`accordion-item`} key={id}>
                     <div

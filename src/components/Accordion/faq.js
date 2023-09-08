@@ -1,4 +1,4 @@
-export const accordionData = [
+export const faq = [
     {
         id: "1",
         title: "Comment réserver une session ou choisir un forfait ?",

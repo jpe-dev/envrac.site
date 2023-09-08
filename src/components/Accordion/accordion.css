@@ -7,6 +7,14 @@
     overflow: hidden;
 }
 
+.inverted-colors .accordion-title {
+    background-color: #cdc2cf;
+}
+
+.inverted-colors .accordion-title:hover {
+    background-color: #b6acb8;
+}
+
 .accordion-title {
     cursor: pointer;
     background-color: #c0a4c8;
@@ -22,6 +30,10 @@
 .accordion-title,
 .accordion-content {
     padding: 1rem;
+}
+
+.inverted-colors .accordion-content {
+    background-color: #c0a4c8;
 }
 
 .accordion-content {

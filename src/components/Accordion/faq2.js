@@ -1,4 +1,4 @@
-export const accordionData2 = [
+export const faq2 = [
     {
         id: "1",
         title: "Quels paramètres et format choisir à l’export ?",
