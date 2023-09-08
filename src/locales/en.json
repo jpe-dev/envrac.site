@@ -87,6 +87,6 @@
     "booking_forfait": "package",
     "booking_essentiel": "Package Essentials",
     "booking_avance": "Package Advanced",
-    "booking_deluxe": "Package Deluxe",
+    "booking_basic": "Package Basic",
     "booking_maestro": "Package Maestro"
 }

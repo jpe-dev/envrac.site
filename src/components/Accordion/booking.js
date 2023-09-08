@@ -1,6 +1,17 @@
 export const accordionData = [
     {
         id: "1",
+        title: "booking_basic",
+        content: (
+            <iframe
+                src='https://koalendar.com/e/forfait-basic?embed=true'
+                title='basic'
+                frameborder='0'
+            ></iframe>
+        ),
+    },
+    {
+        id: "2",
         title: "booking_essentiel",
         content: (
             <iframe
@@ -11,23 +22,12 @@ export const accordionData = [
         ),
     },
     {
-        id: "2",
+        id: "3",
         title: "booking_avance",
         content: (
             <iframe
                 src='https://koalendar.com/e/forfait-avance?embed=true '
                 title='avance'
-                frameborder='0'
-            ></iframe>
-        ),
-    },
-    {
-        id: "3",
-        title: "booking_deluxe",
-        content: (
-            <iframe
-                src='https://koalendar.com/e/forfait-deluxe?embed=true '
-                title='deluxe'
                 frameborder='0'
             ></iframe>
         ),
