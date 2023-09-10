@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import envracLogo from "../../images/logo.jpeg";
 import { useTranslation } from "react-i18next";
 import "./menu.css";
+import { useState } from "react";
 
 const handleClickScroll = (id) => {
     setTimeout(() => {
@@ -13,6 +14,10 @@ const handleClickScroll = (id) => {
 };
 const Menu = () => {
     const { t } = useTranslation();
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+    const toggleHamburger = () => {
+        setHamburgerOpen(!hamburgerOpen);
+    };
 
     return (
         <>
@@ -114,6 +119,146 @@ const Menu = () => {
                     </li>
                 </ul>
             </nav>
+            <div className='navigationHamburger'>
+                <div className='hamburger' onClick={toggleHamburger}>
+                    <div className='burger'></div>
+                    <div className='burger'></div>
+                    <div className='burger'></div>
+                </div>
+                <ul className='menuHamburger'>
+                    <li>
+                        <Link to='/presentation'>{t("menu_presentation")}</Link>
+                        <div className='subnavHamburger'>
+                            <Link
+                                to='/presentation/#studio'
+                                onClick={() => handleClickScroll("studio")}
+                            >
+                                {t("menu_presentation_1")}
+                            </Link>
+                            <Link
+                                to='/presentation/#work-space'
+                                onClick={() => handleClickScroll("work-space")}
+                            >
+                                {t("menu_presentation_2")}
+                            </Link>
+                            <Link
+                                to='/presentation/#equipement'
+                                onClick={() => handleClickScroll("equipement")}
+                            >
+                                {t("menu_presentation_5")}
+                            </Link>
+                            <Link
+                                to='/presentation/#association'
+                                onClick={() => handleClickScroll("association")}
+                            >
+                                {t("menu_presentation_4")}
+                            </Link>
+                        </div>
+                    </li>
+                    <li>
+                        <Link to='/services'>{t("menu_services")}</Link>
+                        <div className='subnavHamburger'>
+                            <Link
+                                to='/services/#audio'
+                                onClick={() => handleClickScroll("audio")}
+                            >
+                                {t("menu_services_1")}
+                            </Link>
+                            {/* <Link to='/services/#visuel'>{t('menu_services_2')}</Link> */}
+                            {/* <Link to='/services/#cours'>{t('menu_services_2')}</Link> */}
+                            {/* <Link to='/services/#location'>{t('menu_services_2')}</Link> */}
+                        </div>
+                    </li>
+                    <li>
+                        <Link to='/docs'>{t("menu_docs")}</Link>
+                        <div className='subnavHamburger'>
+                            <Link
+                                to='/docs/#lexique'
+                                onClick={() => handleClickScroll("lexique")}
+                            >
+                                {t("menu_docs_1")}
+                            </Link>
+                            <Link
+                                to='/docs/#faq'
+                                onClick={() => handleClickScroll("faq")}
+                            >
+                                {t("menu_docs_2")}
+                            </Link>
+                        </div>
+                    </li>
+                    <li>
+                        <Link to='/portfolio'>{t("menu_portfolio")}</Link>
+                        <div className='subnavHamburger'>
+                            <Link to='/portfolio/#releases'>
+                                {t("menu_portfolio_1")}
+                            </Link>
+                            {/* <Link to='/portfolio/#blog'>{t('menu_portfolio_2')}</Link> */}
+                        </div>
+                    </li>
+                    <li>
+                        <Link to='/contact'>{t("menu_contact")}</Link>
+                        <div className='subnavHamburger'>
+                            <Link
+                                to='/contact/#a_propos'
+                                onClick={() => handleClickScroll("a_propos")}
+                            >
+                                {t("menu_contact_3")}
+                            </Link>
+                            <Link
+                                to='/contact/#equipe'
+                                onClick={() => handleClickScroll("equipe")}
+                            >
+                                {t("menu_contact_1")}
+                            </Link>
+                        </div>
+                    </li>
+                    <li>
+                        <Link to='/booking'>{t("menu_agenda")}</Link>
+                    </li>
+                </ul>
+            </div>
+            <style jsx>{`
+                .navigationHamburger ul {
+                    display: ${hamburgerOpen ? "inline" : "none"};
+                }
+                .navigationHamburger li {
+                    padding: 0.25rem;
+                    text-transform: uppercase;
+                    font-size: 20pt;
+                }
+                .subnavHamburger {
+                    font-size: 15pt;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 1rem 3rem;
+                }
+                .hamburger {
+                    width: 2rem;
+                    height: 2rem;
+                    display: none;
+                    justify-content: space-around;
+                    flex-flow: column nowrap;
+                    padding: 0.25rem;
+                }
+                .burger {
+                    width: 2rem;
+                    height: 0.25rem;
+                    border-radius: 10px;
+                    background-color: #ceb9d5;
+                    transform-origin: 1px;
+                    transition: all 0.3s linear;
+                }
+                @media (orientation: portrait) {
+                    @media (max-width: 1080px) {
+                        .hamburger {
+                            display: flex;
+                        }
+                        nav {
+                            display: none;
+                        }
+                    }
+                }
+            `}</style>
         </>
     );
 };
