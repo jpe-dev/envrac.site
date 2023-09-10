@@ -30,6 +30,7 @@
 .accordion-title,
 .accordion-content {
     padding: 1rem;
+    font-size: 12pt;
 }
 
 .inverted-colors .accordion-content {
