@@ -12,10 +12,9 @@ footer {
     width: 100%;
     border-top: 1px solid #aeadae;
     height: 60px !important;
-}
-
-footer * {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 footer p a {
@@ -32,19 +31,12 @@ footer p {
 }
 
 footer p:first-child {
-    float: left;
-    margin-left: 0.25em;
+    padding-left: 0.25em;
 }
 
 footer p:last-child {
-    float: right;
-    margin-right: 0.25em;
+    padding-right: 0.25em;
 }
-
-footer p:nth-child(2) {
-    margin-inline: 0% 10%;
-}
-
 footer p,
 footer:not(:nth-child(3)) {
     font-size: 13.5pt;
@@ -52,10 +44,6 @@ footer:not(:nth-child(3)) {
 
 footer p:nth-child(3) {
     font-size: 16pt;
-}
-
-footer p:nth-child(4) {
-    margin-inline: 10% 0%;
 }
 
 a,
