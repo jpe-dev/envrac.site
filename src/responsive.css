@@ -136,14 +136,32 @@
             #home-article div p {
                 width: 90% !important;
             }
+            #homeWrap {
+                width: 90% !important;
+            }
+            h1 {
+                margin-left: 2rem;
+            }
             .banner-article {
                 font-size: 30pt;
             }
-            .content div{
-                width: 90% !important;
+            .content {
+                width: 100% !important;
             }
             .content p {
                 font-size: 27pt;
+            }
+            #studioWrap div,
+            #workspaceWrap .w-40,
+            #equipementWrap .w-80 {
+                width: 100% !important;
+            }
+            #studioWrap p,
+            #workspaceWrap p,
+            #equipementWrap p,
+            #associationWrap p {
+                width: 90% !important;
+                margin: 1rem auto;
             }
             footer {
                 flex-direction: column;
@@ -159,14 +177,64 @@
             .flex-row {
                 flex-direction: column;
             }
-            img.w-50  {
+            img.w-50 {
                 width: 90% !important;
-                margin-top: 2rem;
+                margin: 2rem auto;
             }
             .audio-img {
-                margin: 0 auto;
+                margin: 2rem auto;
                 height: 250px;
                 width: 250px;
+            }
+            #lexique,
+            #lexique .w-50,
+            #faq,
+            #faq .w-50 {
+                width: 100% !important;
+            }
+            #lexique .w-50:last-child,
+            #faq .w-50:last-child {
+                margin-top: 3rem;
+            }
+            .accordion {
+                width: 90%;
+            }
+            .accordion-title {
+                font-size: 24pt;
+            }
+            .accordion-content {
+                font-size: 24pt;
+            }
+            #mailtoForm {
+                width: 100%;
+            }
+            #mailtoForm input {
+                width: 90%;
+                margin: 1rem auto !important;
+                font-size: 24pt;
+            }
+            .team-card-row {
+                flex-direction: column;
+            }
+            .team-card {
+                width: 90%;
+                margin: 4rem auto;
+            }
+            .team-img {
+                width: 250px;
+                height: 250px;
+            }
+            .team-description {
+                font-size: 24pt !important;
+            }
+            .team-name {
+                font-size: 30pt !important;
+            }
+            .team-title {
+                font-size: 28pt !important;
+            }
+            #koalendarWrap .accordion {
+                width: 100%;
             }
         }
     }

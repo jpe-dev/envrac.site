@@ -13,7 +13,7 @@ const Presentation = () => {
     return (
         <>
             <Menu />
-            <div className='content'>
+            <div className='content' id='studioWrap'>
                 <h1 id='studio'>{t("menu_presentation_1")}</h1>
                 <div className='flex-row space-between'>
                     <div className='flex-col w-40'>
@@ -24,7 +24,7 @@ const Presentation = () => {
                 </div>
                 <hr className='m-t-3'></hr>
             </div>
-            <div className='content m-t-2 m-b-1'>
+            <div className='content m-t-2 m-b-1' id='workspaceWrap'>
                 <h1 id='work-space'>{t("menu_presentation_2")}</h1>
                 <div className='flex-row space-between'>
                     <div className='flex-col w-40'>
@@ -35,7 +35,7 @@ const Presentation = () => {
                 </div>
                 <hr className='m-t-3'></hr>
             </div>
-            <div className='content m-t-2 m-b-1'>
+            <div className='content m-t-2 m-b-1' id='equipementWrap'>
                 <h1 id='equipement'>{t("menu_presentation_5")}</h1>
                 <div className='w-80'>
                     <p>{t("pres_equ_1")}</p>
@@ -48,7 +48,7 @@ const Presentation = () => {
                 </div>
                 <hr className='m-t-3'></hr>
             </div>
-            <div className='content m-t-2 m-b-1'>
+            <div className='content m-t-2 m-b-1' id="associationWrap">
                 <h1 id='association'>{t("menu_presentation_4")}</h1>
                 <p>{t("presentation_association_1")}</p>
                 <p>{t("presentation_association_2")}</p>

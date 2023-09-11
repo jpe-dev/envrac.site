@@ -15,7 +15,7 @@ const Booking = () => {
     return (
         <>
             <Menu />
-            <div className='content'>
+            <div className='content' id='koalendarWrap'>
                 <h1>{t("menu_agenda")}</h1>
                 <p>{t("booking_1")}</p>
                 <p>{t("booking_2")}</p>

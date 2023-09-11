@@ -32,7 +32,10 @@ const Accueil = () => {
                 className='w-100 justify-center content'
                 style={{ marginTop: "25%", marginBottom: "10%" }}
             >
-                <div className='w-60 flex-col justify-center text-center'>
+                <div
+                    className='w-60 flex-col justify-center text-center'
+                    id='homeWrap'
+                >
                     <p>{t("accueil_1_4")}</p>
                     <p>{t("accueil_2_4")}</p>
                     <p>{t("accueil_3_4")}</p>
