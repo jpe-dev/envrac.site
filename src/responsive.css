@@ -120,5 +120,54 @@
     }
     /*ALL MOBILE PORTRAIT*/
     @media (orientation: portrait) {
+        @media (max-width: 1080px) {
+            .menuToggle {
+                display: block;
+            }
+            nav {
+                display: none;
+            }
+            #home-article {
+                flex-direction: column;
+            }
+            #home-article div {
+                width: 100% !important;
+            }
+            #home-article div p {
+                width: 90% !important;
+            }
+            .banner-article {
+                font-size: 30pt;
+            }
+            .content div{
+                width: 90% !important;
+            }
+            .content p {
+                font-size: 27pt;
+            }
+            footer {
+                flex-direction: column;
+            }
+            footer p,
+            footer:not(:nth-child(3)) {
+                font-size: 27pt;
+            }
+
+            footer p:nth-child(3) {
+                font-size: 32pt;
+            }
+            .flex-row {
+                flex-direction: column;
+            }
+            img.w-50  {
+                width: 90% !important;
+                margin-top: 2rem;
+            }
+            .audio-img {
+                margin: 0 auto;
+                height: 250px;
+                width: 250px;
+            }
+        }
     }
 }

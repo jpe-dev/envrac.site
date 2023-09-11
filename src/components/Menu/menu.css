@@ -100,10 +100,10 @@ nav,
 .navigationHamburger li {
     padding: 0.25rem;
     text-transform: uppercase;
-    font-size: 20pt;
+    font-size: 40pt;
 }
 .subnavHamburger {
-    font-size: 15pt;
+    font-size: 30pt;
     display: flex;
     flex-direction: column;
     margin: 1rem 3rem;
@@ -170,14 +170,4 @@ nav,
     border: none;
     outline: 2px solid var(--c);
     outline-offset: 5px;
-}
-@media (orientation: portrait) {
-    @media (max-width: 1080px) {
-        .menuToggle {
-            display: block;
-        }
-        nav {
-            display: none;
-        }
-    }
 }
