@@ -18,7 +18,9 @@ const Accordion = (props) => {
             {props.accordionData.map(({ id, title, content }) => (
                 <div className={`accordion-item`} key={id}>
                     <div
-                        className='accordion-title'
+                        className={`accordion-title ${
+                            activeTab === id ? "open" : ""
+                        }`}
                         onClick={() => handleAccordionClick(id)}
                     >
                         <div>{t(title)}</div>

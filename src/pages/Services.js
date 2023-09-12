@@ -58,7 +58,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div className='content' style={{ marginTop: "5rem" }}>
+            <div className='content' style={{ marginTop: "5rem" }} id='mixWrap'>
                 <div className='flex-row space-between'>
                     <img className='audio-img' src={mix} alt='record' />
                     <div className='w-75'>
@@ -79,7 +79,11 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div className='content' style={{ marginTop: "5rem" }}>
+            <div
+                className='content'
+                style={{ marginTop: "5rem" }}
+                id='masterWrap'
+            >
                 <div className='flex-row space-between'>
                     <img className='audio-img' src={master} alt='record' />
                     <div className='w-75'>
