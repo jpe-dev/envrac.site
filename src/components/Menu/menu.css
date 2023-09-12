@@ -83,6 +83,7 @@ nav,
 
 /*Hamburger menu*/
 .menuHamburger {
+    z-index: 99;
     height: 0;
     visibility: hidden;
     opacity: 0;

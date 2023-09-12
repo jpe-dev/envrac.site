@@ -18,6 +18,7 @@ body {
 
 /** -- BANNER BEHIND BODY -- **/
 .background::before {
+    z-index: -1;
     content: " ";
     display: block;
     position: absolute;
