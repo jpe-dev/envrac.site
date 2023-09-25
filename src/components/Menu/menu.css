@@ -90,6 +90,7 @@ nav,
     overflow: hidden;
     transition-delay: 1s;
     transition: visibility 0.5s linear, opacity 0.5s linear, height 0.5s linear;
+    margin: 0;
 }
 .menuHamburger.open {
     height: auto;
@@ -97,6 +98,7 @@ nav,
     list-style-type: none;
     transition-delay: 0.25s;
     opacity: 1;
+    margin: 0 16px;
 }
 .navigationHamburger li {
     padding: 0.25rem;

@@ -1,0 +1,179 @@
+:root {
+    --slide-show-size: 420px;
+    --slide-show-size-img: 350px;
+}
+.slideShow-indicator {
+    position: relative;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    margin-top: -3rem;
+}
+.slideshow-wrapper {
+    background-color: #c9b1d0;
+    height: var(--slide-show-size);
+}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    height: var(--slide-show-size);
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    max-height: var(--slide-show-size);
+    flex-direction: row;
+    align-items: center;
+}
+.mySlides:has(.centerSlideImage) {
+    display: block;
+}
+
+.mySlides:has(:not(.centerSlideImage)) {
+    justify-content: space-around;
+    align-content: center;
+}
+
+.mySlides img {
+    max-height: var(--slide-show-size);
+}
+
+.centerSlideImage {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    max-height: var(--slide-show-size-img) !important;
+}
+
+.leftSlideText,
+.rightSlideText,
+.centerSlideText {
+    color: white;
+}
+
+.leftSlideText,
+.rightSlideText {
+    width: 40%;
+    height: 100%;
+}
+
+.centerSlideText {
+    position: absolute;
+    left: 50%; /* horizontal alignment */
+    top: 70%; /* vertical alignment */
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.leftSlideText {
+    order: -1;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    margin-top: 2rem;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    width: 30px;
+    height: 3px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.dot:not(:first-of-type) {
+    margin-left: 15px;
+}
+
+.dot::before {
+    height: 5px;
+    width: 30px;
+    top: -1px;
+    position: absolute;
+    background-color: #c0a4c8;
+    content: " ";
+}
+.dot::after {
+    height: 3px;
+    width: 0;
+    top: 0;
+    position: absolute;
+    background-color: white;
+    content: " ";
+}
+.active.dot::after {
+    width: 30px;
+    animation-play-state: running;
+    animation: carousel-progress 4000ms linear;
+}
+.paused.dot::after {
+    animation-play-state: paused;
+}
+.active.dot::before,
+.dot:hover {
+    background-color: #717171;
+}
+
+@keyframes carousel-progress {
+    from {
+        width: 0;
+    }
+    to {
+        width: 30px;
+    }
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}

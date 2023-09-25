@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Menu from "../components/Menu";
 import Footer from "../components/Footer";
+import SlideShow from "../components/SlideShow";
+import { slideShowData } from "../components/SlideShow/slideShowData";
 import envracBanner from "../images/banner-transparent.png";
 
 const Accueil = () => {
@@ -13,6 +15,7 @@ const Accueil = () => {
     return (
         <>
             <Menu />
+            <SlideShow data={slideShowData}></SlideShow>
             <div id='home-article'>
                 <div className='w-50 justify-center h-40'>
                     <img
