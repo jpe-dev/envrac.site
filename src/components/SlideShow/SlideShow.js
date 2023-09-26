@@ -55,7 +55,7 @@ function SlideShow(props) {
         return () => {
             resetTimeout();
         };
-    }, [slideIndex]);
+    }, [slideIndex, hover]);
     useEffect(() => {
         resetTimeout();
         if (!hover) {
@@ -63,10 +63,9 @@ function SlideShow(props) {
                 changeIndex(slideIndex + 1);
             }, delay);
         }
-    }, [hover]);
+    }, [hover, slideIndex]);
     useEffect(() => {
         const importedImages = {};
-        let i = 0;
         const r = require.context(
             "../../images/", // relative path to folder with images, that we want to be imported and preloaded
             false, // with subfolders or not
@@ -113,12 +112,14 @@ function SlideShow(props) {
                     <a
                         className='prev'
                         onClick={() => changeIndex(slideIndex - 1)}
+                        href='/#'
                     >
                         &#10094;
                     </a>
                     <a
                         className='next'
                         onClick={() => changeIndex(slideIndex + 1)}
+                        href='/#'
                     >
                         &#10095;
                     </a>
