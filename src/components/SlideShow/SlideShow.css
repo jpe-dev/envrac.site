@@ -146,11 +146,9 @@
     animation-play-state: running;
     animation: carousel-progress 4000ms linear;
 }
-.paused.dot::after {
-    animation-play-state: paused;
-}
 .active.dot::before,
-.dot:hover {
+.dot:hover,
+.activeDot::before {
     background-color: #717171;
 }
 

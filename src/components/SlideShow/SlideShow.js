@@ -50,20 +50,22 @@ function SlideShow(props) {
             timeoutRef.current = setTimeout(() => {
                 changeIndex(slideIndex + 1);
             }, delay);
+            showSlides(slideIndex);
         }
-        showSlides(slideIndex);
         return () => {
             resetTimeout();
         };
     }, [slideIndex, hover]);
     useEffect(() => {
         resetTimeout();
-        if (!hover) {
-            timeoutRef.current = setTimeout(() => {
-                changeIndex(slideIndex + 1);
-            }, delay);
-        }
-    }, [hover, slideIndex]);
+        timeoutRef.current = setTimeout(() => {
+            changeIndex(slideIndex + 1);
+        }, delay);
+        showSlides(slideIndex);
+        return () => {
+            resetTimeout();
+        };
+    }, [slideIndex]);
     useEffect(() => {
         const importedImages = {};
         const r = require.context(
@@ -89,7 +91,6 @@ function SlideShow(props) {
             >
                 <div className='slideshow-container'>
                     {props.data.map((slide, i) => {
-                        console.log(slide.image);
                         return (
                             <div className='mySlides fade'>
                                 <img
@@ -132,14 +133,12 @@ function SlideShow(props) {
                                 <li
                                     className={`dot ${
                                         hover
-                                            ? "paused"
+                                            ? ""
                                             : slideIndex === i
                                             ? "active"
                                             : ""
                                     }`}
                                     onClick={() => changeIndex(i)}
-                                    onMouseEnter={handleMouseOver}
-                                    onMouseLeave={handleMouseOut}
                                 ></li>
                             </>
                         );
