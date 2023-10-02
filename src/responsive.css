@@ -281,6 +281,25 @@
                 height: auto;
                 margin: 2rem auto;
             }
+            :root {
+                --slide-show-size: 750px;
+            }
+            .slideshow-wrapper {
+                margin-top: 5rem;
+            }
+            .mySlides {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .leftSlideText,
+            .rightSlideText {
+                width: 80%;
+            }
+            .leftSlideText {
+                order: 1;
+            }
         }
         @media (max-width: 412px) {
             footer p,
